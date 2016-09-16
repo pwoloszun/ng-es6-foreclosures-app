@@ -2,18 +2,15 @@
   <table>
     <thead class="list-header">
     <tr>
-      <td ng-repeat="header in $ctrl.headers">
-        <a>{{header.text}}</a>
-      </td>
+      <th>
+        <a>TODO</a>
+      </th>
     </tr>
     </thead>
     <tbody class="items-container">
-    <tr ng-repeat="item in $ctrl.items"
-        ng-class="{highlighted: $ctrl.selectedItem == item}"
-        ng-click="$ctrl.itemClick({selectedItem: item})"
-        class="list-item">
-      <td ng-repeat="header in $ctrl.headers">
-        {{item[header.value]}}
+    <tr class="list-item">
+      <td>
+        TODO
       </td>
     </tr>
     </tbody>
