@@ -1,0 +1,10 @@
+<div class="row">
+  <h3>Data Table</h3>
+  <h4>Selected: {{$ctrl.selectedHero.name}}</h4>
+
+  <rm-data-table items="$ctrl.superHeroes"
+                 selected-item="$ctrl.selectedHero"
+                 headers="$ctrl.tableHeaders"
+                 item-click="$ctrl.onHeroClick(selectedItem)"></rm-data-table>
+
+</div>

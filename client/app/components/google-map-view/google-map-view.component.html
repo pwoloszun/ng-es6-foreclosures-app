@@ -1,0 +1,20 @@
+<div class="row">
+  <h3>Google Map</h3>
+  <google-map geo-locations="$ctrl.myPlaces" selected=""></google-map>
+
+  <table style="width: 98%; margin: 10px auto;">
+    <tr>
+      <th>Title</th>
+      <th>Was clicked</th>
+    </tr>
+    <tr ng-repeat="p in $ctrl.myPlaces">
+      <td>
+        {{p.title}}
+      </td>
+      <td>
+        {{p.selected}}
+      </td>
+    </tr>
+  </table>
+
+</div>
